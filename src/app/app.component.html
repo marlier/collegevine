@@ -1,0 +1,6 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<table>
+  <tr collegevine-school-item *ngFor="let schoolDatum of schoolData" [schoolItem]="schoolDatum"></tr>
+</table>
+<collegevine-modal [show]="modalShown" (openModal)="openModal($event)"></collegevine-modal>
+<router-outlet></router-outlet>
